@@ -1,8 +1,8 @@
 {
   "name": "Intraday Compound Interest Calculator",
   "short_name": "IntraCalc",
-  "theme_color": "tomato",
-  "background_color": "#333238",
+  "theme_color": "#209CEE",
+  "background_color": "#fcfcfc",
   "Scope": "/",
   "start_url": "/",
   "icons": [
