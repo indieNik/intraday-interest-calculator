@@ -9,10 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
     background: #fff;
-    overflow: hidden;
 }
 
 .container {
@@ -34,7 +31,7 @@ h3 {
 .item {
     position: relative;
     width: 80vw;
-    height: 90vh;
+    height: 100%;
     background: #4b4959;
     color: #fff;
 }
@@ -44,7 +41,7 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px 10vw;
+    padding: 2vh 10vw;
     padding-bottom: 30px;
 }
 
@@ -73,8 +70,8 @@ button {
 }
 
 #breakdown {
-    margin-top: 20px;
-    height: 300px;
+    margin: 20px 0;
+    height: 500px;
     overflow: scroll;
 }
 
@@ -100,12 +97,12 @@ button {
 
     .item {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: #333238;
     }
 
     #breakdown {
-        height: 150px;
+        height: 300px;
     }
     
 
