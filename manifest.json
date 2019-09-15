@@ -3,7 +3,6 @@
   "short_name": "IntraCalc",
   "theme_color": "tomato",
   "background_color": "#333238",
-  "display": "fullscreen",
   "Scope": "/",
   "start_url": "/",
   "icons": [
