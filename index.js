@@ -19,25 +19,29 @@ function calculateCompounding() {
   // let initialPlaceholder = document.getElementById("initialPlaceholder");
   // let monthlyPlaceholder = document.getElementById("monthlyPlaceholder");
   let compoundedPlaceholder = document.getElementById("compoundedPlaceholder");
+  let profitPlaceholder = document.getElementById("profitPlaceholder");
 
   // initialPlaceholder.innerHTML = principalAmt;
   // monthlyPlaceholder.innerHTML = monthlyAmt;
 
   let compoundedAmt = getFinalPrice(noOfDays);
-  compoundedPlaceholder.innerHTML =
-    "The Compounded Amount for an Initial Investment of " +
-    principalAmt +
-    " and monthly SIP of " +
-    monthlyAmt +
-    " for " +
-    noOfDays +
-    " days is <b>" +
-    compoundedAmt.toFixed(2) +
-    "(Rs. " +
-    convertNumberToWords(compoundedAmt.toFixed(2)) +
-    ")" +
-    "</b> with total SIP value of " +
-    totalMonthlyAmt;
+    profitPlaceholder.innerHTML = "Total Profit:  " +
+      (compoundedAmt - principalAmt).toFixed(2) +
+      " ( " + (compoundedAmt / principalAmt * 100).toFixed(2) + "% )";
+    compoundedPlaceholder.innerHTML =
+      "The Compounded Amount for an Initial Investment of " +
+      principalAmt +
+      " and monthly SIP of " +
+      monthlyAmt +
+      " for " +
+      noOfDays +
+      " days is <b>" +
+      compoundedAmt.toFixed(2) +
+      "(Rs. " +
+      convertNumberToWords(compoundedAmt.toFixed(2)) +
+      ")" +
+      "</b> with total SIP value of " +
+      totalMonthlyAmt;
 }
 
 function getFinalPrice(days) {
