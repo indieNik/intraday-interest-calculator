@@ -25,9 +25,10 @@ function calculateCompounding() {
   // monthlyPlaceholder.innerHTML = monthlyAmt;
 
   let compoundedAmt = getFinalPrice(noOfDays);
+  let totalInvestment = principalAmt + totalMonthlyAmt;
     profitPlaceholder.innerHTML = "Total Profit:  " +
-      (compoundedAmt - principalAmt).toFixed(2) +
-      " ( " + ((compoundedAmt - principalAmt) / principalAmt * 100).toFixed(2) + "% )";
+      (compoundedAmt - totalInvestment).toFixed(2) +
+      " ( " + ((compoundedAmt - totalInvestment) / totalInvestment * 100).toFixed(2) + "% )";
     compoundedPlaceholder.innerHTML =
       "The Compounded Amount for an Initial Investment of " +
       principalAmt +
